@@ -1,0 +1,191 @@
+* {
+  font-family: Roboto;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  background-color: #212121;
+  color: greenyellow;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  background-color: #f1f1f1;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+  text-align: center;
+
+  width: 100px;
+}
+
+header nav ul li a {
+  color: #212121;
+  text-decoration: none;
+  width: 100%;
+
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  transition: background-color 1s;
+}
+
+header nav ul li a:hover {
+  color: greenyellow;
+  background-color: #212121;
+}
+
+main {
+  display: flex;
+}
+
+#content {
+  display: flex;
+  flex-grow: 5;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+
+  width: 75%;
+  margin: 10px;
+}
+
+aside {
+  flex-grow: 1;
+  width: 25%;
+  margin: 10px;
+}
+
+p {
+  text-align: justify;
+  margin: 0;
+}
+
+.thumb img {
+  width: 100%;
+  display: flex;
+
+  text-align: justify;
+}
+
+section {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+section:hover {
+  cursor: pointer;
+}
+
+section img {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+section img:hover {
+  transform: scale(1.5);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+article.card {
+  display: none;
+
+  padding-bottom: 10%;
+}
+
+#berita1 {
+  display: block;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+}
+
+footer p {
+  background-color: #212121;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+
+footer span {
+  color: greenyellow;
+}
+
+@media screen and (max-width: 500px) {
+  #content,
+  aside {
+    align-self: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    height: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
